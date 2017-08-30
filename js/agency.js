@@ -1,5 +1,6 @@
 var x=0;
 
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -22,7 +23,7 @@ var x=0;
     target: '#mainNav',
     offset: 54
   });
-
+	
   // Closes responsive menu when a link is clicked
   $('.navbar-collapse>ul>li>a').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -41,15 +42,6 @@ var x=0;
   //  map.invalidateSize();
   //});
   $('a[href="#dummy"]').click(function(){
-	//var closeButton=document.createElement("button");
-	//var controlDiv=document.createElement("div");
-	//controlDiv.className="leaflet-control";
-	//closeButton.type="button";
-	//closeButton.className="btn btn-primary";
-	//closeButton.setAttribute("data-dismiss","modal");
-	//closeButton.textContent="Закрыть карту";
-	//controlDiv.appendChild(closeButton);
-	//var placeDiv=document.getElementsByClassName("leaflet-bottom leaflet-left");
 	//placeDiv[0].appendChild(controlDiv);
 	window.fSBut=document.getElementsByClassName("dg-control-round leaflet-control");
 	window.fullScreen=document.getElementsByClassName("dg-control-round__icon dg-control-round__icon_name_fullscreen");
@@ -85,7 +77,23 @@ var x=0;
 	
 	},500);	
   });
-  
+  var xprice=0;	
+  $('button[id="i12"]').click(function(){
+		  xprice=1;
+  });
+  $('button[id="i13"]').click(function(){
+		  xprice=1.1;
+  });
+  $('div[id="wheels-r"]').click(function(){
+  var base_price_ts=900;
+   
+  var tsprice=document.getElementById('tr1-td2');
+  var irub=document.createElement("i");
+  irub.className="fa fa-rub";
+  tsprice.textContent=Math.round(base_price_ts*xprice)+" ";
+  tsprice.appendChild(irub);
+  });
+
   $(window).on(Event.LOAD,function() {
 	
     $("#mainNav").addClass("navbar-shrink");
