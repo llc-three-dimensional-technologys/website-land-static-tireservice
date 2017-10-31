@@ -325,12 +325,18 @@ header.masthead {
 .services-modal .modal-backdrop {
   display: none;
   opacity: 0; }
+
+section#price {
+	background-color: #fed136 !important;
+	
+}
+
 .price-table .th-right {
 	text-align: right;
 }
-section#price {
-	background-color: #fed136 !important;
-}
+.price-table .td-center {
+	text-align: center;
+}	
 .timeline {
   position: relative;
   padding: 0;
@@ -527,7 +533,7 @@ section#contact {
     color: #e74c3c; }
 
 footer {
-  /* padding: 25px 0; */
+  padding: 10px 0; 
   text-align: center; }
   footer span.copyright {
     font-size: 90%;
