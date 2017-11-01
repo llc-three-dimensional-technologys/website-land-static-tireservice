@@ -387,9 +387,9 @@ e
                 <div class="modal-body">
                   <!--Подробная информация о услуге-->
                   <h3>Сезонный шиномонтаж</h3>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="item-intro text-muted">Полный комплекс услуг по смене полного комплекта колес.</p>
                   <img class="img-fluid d-block mx-auto" src="img/services/tireservice-full.jpg" alt="Сезонный шиномонтаж">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p>В комплекс услуг входит: снятие/установка, разбортовка/забортовка, балансировка, герметизация</p>
                   <ul class="list-inline">
                     <li>Date: January 2017</li>
                     <li>Client: Threads</li>
